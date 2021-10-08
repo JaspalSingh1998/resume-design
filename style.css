@@ -22,7 +22,7 @@ body {
   padding: 1rem;
 }
 .container {
-  max-width: 322px;
+  max-width: 90vw;
 }
 .top-ctr {
   border-top-right-radius: 5px;
@@ -45,18 +45,67 @@ body {
   color: var(--muted);
   font-size: 18px;
 }
-.about-ctr {
-  background-color: var(--about-bg);
+.section-ctr {
   color: #fff;
   padding: 30px 20px;
 }
-.about-ctr > h3 {
+.about {
+  background-color: var(--about-bg);
+}
+.section-ctr > h3 {
   padding-bottom: 1.2rem;
   margin-bottom: 1.2rem;
   border-bottom: solid 1px rgba(255, 255, 255, 0.259);
 }
-.about-ctr > p {
+.section-ctr > p {
   font-size: 14px;
   line-height: 1.75;
   font-weight: 300;
+}
+.recent {
+  background-color: var(--recent-bg);
+}
+.recent > ul {
+  list-style: none;
+  font-size: 14px;
+}
+.recent > ul li {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.icon {
+  border: solid 1px rgba(255, 255, 255, 0.259);
+  padding: 0 0.15625rem;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.contact {
+  background-color: var(--contact-bg);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.media-ctr {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.media-ctr .btn {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 18px;
+  border: solid 1px rgba(255, 255, 255, 0.259);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    padding: 3rem;
+  }
+  .container {
+    max-width: 513px;
+    margin: auto;
+  }
 }
